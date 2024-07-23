@@ -3,20 +3,38 @@
 
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0px;  
+}
+
+body {
+  box-sizing: border-box;
   background-color: black;
   color: white;
 }
 
-body {
-  height: 100vh;
-  box-sizing: border-box;
+.head{
+  /*margin: 65px 360px; */
+  padding: 2% 0% 0% 15%;
+}
+
+.head__menu{
+  display: flex;
+  gap: 80px;
+}
+
+.head__menu__link{
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color:#22D4FD;
+  
 }
 
 .contenedor {
   display: flex;
   align-items: center;
-  margin: 10% 15%;
+  padding: 3% 15%;
   justify-content: space-between;
 }
 
@@ -93,6 +111,13 @@ span:hover{
   width: 28px;
 }
 
-footer {
-  background-color: white;
+.body_foot{
+  color: black;
+  background-color:#22D4FD;
+  padding: 24px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
+
