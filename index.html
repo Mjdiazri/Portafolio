@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="./estilos/estilo.css" />
+    <title>Portafolio-MJDIAZRI</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      <h1>
-        Eleve tu negocio digital a otro nivel<strong>
-          con un Front-end de calidad!</strong>
-      </h1>
-      <p>
-        ¡Hola! Soy Ana García, desarrolladora Front-end con especialización en
-        React, HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a
-        cabo buenas ideas. ¿Hablamos?
-      </p>
-      <a href="https://www.instagram.com/">Instagram</a>
-      <a href="https://github.com/">GitHub</a>
-      <img src="Imagem.png" alt="Ana Garcia trabajando" />
+    <header class="head">
+      <nav class="head__menu">
+        <a href="index.html" class="head__menu__link">Home</a>
+        <a href="about.html" class="head__menu__link">Sobre mí</a>
+      </nav>
+    </header>
+    <main class="contenedor">
+      <section class="contenedor_contenido">
+        <h1 class="contenedor_contenido_titulo">
+          Eleve tu negocio digital a otro nivel
+          <strong class="destacar">con un Front-end de calidad!</strong>
+        </h1>
+        <p class="contenedor_contenido_parrafo">
+          ¡Hola! Soy Mónica Diaz, estudiante de ingeniería industrial y
+          actualmente estudiante de programación en Alura Latam y Talento Tech.
+          Soy tecnologa en gestión logística con especialización en gestión
+          económica de la logística internacional.
+          Tengo conocimientos básicos en:
+          <br><br><span>css</span> - <span>javascript</span> -
+          <span>java</span>
+        </p>
+        <div class="contenedor_boton">
+          <h2 class="contenedor_boton_titulo">Accede a mis redes: </h2>
+          <a class="contenedor_boton_a"  href="www.linkedin.com/in/mjdiazri">
+            <img src="./assets/linkedin.png" alt="Logo de linkedin" class="contenedor_boton_a_logo">
+             Linkedin
+          </a>
+          <a class="contenedor_boton_a" href="https://github.com/Mjdiazri">
+            <img src="./assets/github.png" alt="Logo de Github" class="contenedor_boton_a_logo">
+             GitHub
+          </a>
+        </div>
+      </section>
+      <img src="./assets/Pictuare-2 (1).png" alt="Foto de Monica Diaz" />
     </main>
-    <footer></footer>
+    <footer class="body_foot">
+      <p>Creado por Monica Jazmin Diaz</p>
+    </footer>
   </body>
 </html>

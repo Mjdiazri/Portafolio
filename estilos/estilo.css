@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --colorPrimario: #000000;
+  --colorSecundario: #f6f6f6;
+  --colorTerciario: #22D4FD;
+
+  --fuenteMonserrat: "Montserrat", sans-serif;
+  --fuenteKrona: "Krona One", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;  
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--colorPrimario);
+  color:var(--colorSecundario);
+}
+
+.head{
+  /*margin: 65px 360px; */
+  padding: 2% 0% 0% 15%;
+}
+
+.head__menu{
+  display: flex;
+  gap: 80px;
+}
+
+.head__menu__link{
+  font-family: var(--fuenteMonserrat);
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color:var(--colorTerciario);
+  
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  padding: 3% 15%;
+  justify-content: space-between;
+}
+
+.contenedor_contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenedor_contenido_titulo {
+    font-size: 36px;
+    font-family: var(--fuenteKrona);
+}
+.destacar {
+  color: var(--colorTerciario);
+}
+
+.contenedor_contenido_parrafo{
+    font-size:24px ;
+    font-family:  "Montserrat", sans-serif;
+}
+
+span {
+  font-weight: bold;
+  color: var(--colorTerciario);
+  border: 1px solid var(--colorTerciario);
+  padding: 10px;
+}
+
+span:hover{
+  background-color: var(--colorTerciario);
+  color: var(--colorPrimario);
+  border: solid var(--colorSecundario);
+  cursor:pointer;
+}
+
+.contenedor_boton{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.contenedor_boton_a{
+  width: 378px;
+  padding: 21.5px 0;
+  text-align: center;
+  border-radius: 8px;
+  color: var(--colorSecundario);
+  font-family: var(--fuenteMonserrat);
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid var(--colorTerciario);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+ }
+
+ .contenedor_boton_a:hover{
+  scale:1.2;
+  box-shadow: white 1px 1px 15px;
+ }
+
+.contenedor_boton_titulo{
+  font-family: var(--fuenteKrona);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contenedor_boton_a_logo{
+  width: 28px;
+}
+
+.body_foot{
+  color: var(--colorPrimario);
+  background-color:var(--colorTerciario);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fuenteMonserrat);
+  font-size: 24px;
+  font-weight: 400;
+}
+
