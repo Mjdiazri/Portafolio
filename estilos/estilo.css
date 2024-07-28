@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root {
+  --colorPrimario: #000000;
+  --colorSecundario: #f6f6f6;
+  --colorTerciario: #22D4FD;
+
+  --fuenteMonserrat: "Montserrat", sans-serif;
+  --fuenteKrona: "Krona One", sans-serif;
+}
+
 * {
   padding: 0px;
   margin: 0px;  
@@ -8,8 +17,8 @@
 
 body {
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  background-color: var(--colorPrimario);
+  color:var(--colorSecundario);
 }
 
 .head{
@@ -23,11 +32,11 @@ body {
 }
 
 .head__menu__link{
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuenteMonserrat);
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
-  color:#22D4FD;
+  color:var(--colorTerciario);
   
 }
 
@@ -47,28 +56,28 @@ body {
 
 .contenedor_contenido_titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuenteKrona);
 }
 .destacar {
-  color: #22D4FD;
+  color: var(--colorTerciario);
 }
 
 .contenedor_contenido_parrafo{
     font-size:24px ;
-    font-family:"Montserrat", sans-serif;
+    font-family:  "Montserrat", sans-serif;
 }
 
 span {
   font-weight: bold;
-  color: #22D4FD;
-  border: 1px solid #22D4FD;
+  color: var(--colorTerciario);
+  border: 1px solid var(--colorTerciario);
   padding: 10px;
 }
 
 span:hover{
-  background-color: #22D4FD;
-  color: black;
-  border: solid white;
+  background-color: var(--colorTerciario);
+  color: var(--colorPrimario);
+  border: solid var(--colorSecundario);
   cursor:pointer;
 }
 
@@ -85,12 +94,12 @@ span:hover{
   padding: 21.5px 0;
   text-align: center;
   border-radius: 8px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
+  color: var(--colorSecundario);
+  font-family: var(--fuenteMonserrat);
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
-  border: 2px solid #22D4FD;
+  border: 2px solid var(--colorTerciario);
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -102,7 +111,7 @@ span:hover{
  }
 
 .contenedor_boton_titulo{
-  font-family:"Krona One", sans-serif;
+  font-family: var(--fuenteKrona);
   font-size: 24px;
   font-weight: 400;
 }
@@ -112,11 +121,11 @@ span:hover{
 }
 
 .body_foot{
-  color: black;
-  background-color:#22D4FD;
+  color: var(--colorPrimario);
+  background-color:var(--colorTerciario);
   padding: 24px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuenteMonserrat);
   font-size: 24px;
   font-weight: 400;
 }
