@@ -33,7 +33,7 @@ body {
 
 .head__menu__link{
   font-family: var(--fuenteMonserrat);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   color:var(--colorTerciario);
@@ -45,17 +45,18 @@ body {
   align-items: center;
   padding: 3% 15%;
   justify-content: space-between;
+  gap: 82px;
 }
 
 .contenedor_contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .contenedor_contenido_titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuenteKrona);
 }
 .destacar {
@@ -63,7 +64,7 @@ body {
 }
 
 .contenedor_contenido_parrafo{
-    font-size:24px ;
+    font-size:1.5rem ;
     font-family:  "Montserrat", sans-serif;
 }
 
@@ -90,14 +91,14 @@ span:hover{
 }
 
 .contenedor_boton_a{
-  width: 378px;
+  width: 50%;
   padding: 21.5px 0;
   text-align: center;
   border-radius: 8px;
   color: var(--colorSecundario);
   font-family: var(--fuenteMonserrat);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
   border: 2px solid var(--colorTerciario);
   display: flex;
@@ -110,9 +111,13 @@ span:hover{
   box-shadow: white 1px 1px 15px;
  }
 
+ .presentacion__imagen{
+    width: 50%;
+ }
+
 .contenedor_boton_titulo{
   font-family: var(--fuenteKrona);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -123,10 +128,35 @@ span:hover{
 .body_foot{
   color: var(--colorPrimario);
   background-color:var(--colorTerciario);
-  padding: 24px;
+  padding: 1.5rem;
   text-align: center;
   font-family: var(--fuenteMonserrat);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1200px){
+
+  .head{
+    padding: 10%;
+    
+  }
+
+  .head__menu{
+    justify-content: center;
+  }
+
+  .contenedor{
+    flex-direction: column-reverse;    
+    padding: 5%;
+  }
+
+  .contenedor_contenido{
+    width: auto;
+  }
+  
+  .contenedor_contenido_parrafo{
+    width: auto;
+  }
 }
 
